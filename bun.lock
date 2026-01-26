@@ -3,7 +3,7 @@
   "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "datapack-wiki",
+      "name": "modpack-dev-wiki",
       "dependencies": {
         "@formkit/auto-animate": "^0.8.4",
         "@iconify-json/tabler": "^1.2.23",

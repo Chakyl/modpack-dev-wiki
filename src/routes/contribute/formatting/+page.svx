@@ -132,7 +132,7 @@ This is an example of an info box.
 ```
 
 Code blocks are a way to format code in your page. These code blocks come with
-the option to add a title to the code block for clarity. The Datapack Wiki
+the option to add a title to the code block for clarity. The Modpack Dev Wiki
 supports syntax highlighting for MCFunction which are used for code samples
 whenever possible.
 

@@ -8,7 +8,7 @@ jobs:
   compile-page-meta:
     name: compile-page-meta
     runs-on: ubuntu-latest
-    if: ${{ github.actor != 'datapack-wiki-indexer[bot]' }}
+    if: ${{ github.actor != 'modpack-dev-wiki-indexer[bot]' }}
     permissions:
       contents: write
     steps:

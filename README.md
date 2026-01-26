@@ -1,8 +1,8 @@
-# Datapack Wiki
+# Modpack Dev Wiki
 
 ![banner](/static/banner.png)
 
-This is the repo for the Datapack Wiki by Datapack Hub. The Datapack Wiki is a comprehensive, in-depth wiki, catered specifically for learning, understanding and building datapacks.
+This is the repo for the Modpack Dev Wiki by Datapack Hub. The Modpack Dev Wiki is a comprehensive, in-depth wiki, catered specifically for learning, understanding and building datapacks.
 
 **Visit the site**: https://datapack.wiki
 

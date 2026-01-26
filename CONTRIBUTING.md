@@ -1,6 +1,6 @@
 # Contributing Guide
 
-Contributing to the Datapack Wiki is very easy. We use MDSveX to integrate
+Contributing to the Modpack Dev Wiki is very easy. We use MDSveX to integrate
 markdown pages with the SvelteKit backend, so to add or edit pages you only need
 to know how to write Markdown, and very limited HTML knowledge.
 

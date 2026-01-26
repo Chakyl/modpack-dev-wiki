@@ -1,7 +1,7 @@
 ---
 title: Home
 description:
-  "Welcome to the Datapack Wiki, a resource for everything related to Minecraft
+  "Welcome to the Modpack Dev Wiki, a resource for everything related to Minecraft
   Datapacks. We've got guides, tutorials, and documentation to help you build
   your knowledge about data packs."
 ---
@@ -11,9 +11,9 @@ import { Discord } from '$lib/reusables';
 import SearchBox from '$lib/sidebar/SearchBox.svelte';
 </script>
 
-# Welcome to the Datapack Wiki!
+# Welcome to the Modpack Dev Wiki!
 
-Welcome to the Datapack Wiki, a resource for everything related to Minecraft
+Welcome to the Modpack Dev Wiki, a resource for everything related to Minecraft
 Datapacks. This community-built wiki has got guides, tutorials, and
 documentation to help you create and modify Minecraft Datapacks.
 

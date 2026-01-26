@@ -75,7 +75,7 @@
         class="h-8 mr-2 {logoFlipped ? 'rotate-180' : ''} {logoBonked ? 'scale-y-50' : ''} transition-transform"
         width="32"
         height="32" />
-      <h1 class="font-bold hidden text-lg lg:text-xl sm:block">Datapack Wiki</h1>
+      <h1 class="font-bold hidden text-lg lg:text-xl sm:block">Modpack Dev Wiki</h1>
     </a>
   </div>
 
