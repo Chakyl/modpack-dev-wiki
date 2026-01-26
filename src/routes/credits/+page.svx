@@ -10,4 +10,4 @@ description:
 The Modpack Dev Wiki is a fork of the [Datapack Wiki](https://datapack.wiki/), managed by [Datapack Hub](https://datapackhub.net), based
 on an original design and idea by [Aandeel](https://aandeel.co.uk).
 
-Made by Chemma, Emmcha, Chemkma, and Echmakyl
+Made by Chemma, Emmcha, Chemkma, and Echmakyl.
