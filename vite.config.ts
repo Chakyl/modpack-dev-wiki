@@ -12,6 +12,7 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  base: "https://chakyl.github.io/",
   build: {
     cssMinify: "lightningcss",
   },
