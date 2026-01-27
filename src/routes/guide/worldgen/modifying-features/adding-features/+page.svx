@@ -1,8 +1,13 @@
 ---
-title: Adding features to your modpack
-tags: guide, worldgen, features, datapack, tutorial, lithostitched
-description:
-    Adding worldgen features to your game with datapacks and Lithostitched
+title: Adding worldgen features to your modpack
+tags:
+  - guide
+  - worldgen
+  - features
+  - datapack
+  - tutorial
+  - lithostitched
+description: Adding worldgen features to your game with datapacks and Lithostitched
 ---
 
 <script lang="ts">

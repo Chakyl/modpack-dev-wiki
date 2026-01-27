@@ -41,8 +41,6 @@
 <SidebarPage label="Home" icon={IconHome} page="/" />
 
 <SidebarCategory name="Info" icon={IconInfo}>
-  <SidebarPage label="Breaking Changes" icon={IconBreak} page="/wiki/info/breaking-changes" />
-  <SidebarPage label="JSON format" icon={IconBraces} page="/wiki/info/json" />
   <SidebarPage label="Free Multiplayer" icon={IconBraces} page="/wiki/info/free-multiplayer" />
   <SidebarPage label="mcmeta Filtering" icon={IconBraces} page="/wiki/info/mcmeta-filtering" />
 </SidebarCategory>
