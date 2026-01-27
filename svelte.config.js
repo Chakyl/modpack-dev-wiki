@@ -75,7 +75,7 @@ const config = {
       fallback: '404.html'
     }),
     paths: {
-      base: process.argv.includes('dev') ? '' : "/modpack-dev-wiki"
+      base: process.argv.includes('dev') ? '' : "chakyl.github.io/modpack-dev-wiki/"
     }
   },
 
