@@ -75,7 +75,7 @@ const config = {
       fallback: '404.html'
     }),
     paths: {
-      base: "/modpack-dev-wiki"
+      relative: "/modpack-dev-wiki"
     }
   },
 
