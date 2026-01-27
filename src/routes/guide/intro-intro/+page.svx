@@ -1,14 +1,14 @@
 ---
-title: 
-tags: 
-description:
-    placeholder
+title: Introduction to modpack development
+tags:
+  - intro
+description: placeholder
 ---
 
 <script lang="ts">
 import { Discord } from '$lib/reusables';
 </script>
 
-# Header
+# Introduction to modpack development
 
 This article is not written yet...

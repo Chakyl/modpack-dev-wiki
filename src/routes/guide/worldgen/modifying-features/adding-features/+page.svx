@@ -95,6 +95,7 @@ Adds the `amethyst_ore:amethyst_placed` placed feature into all biomes with the 
   "step": "underground_ores"
 }
 ```
+
 :::tip
 
 - Biome and Biome Tag IDs can be found by going through `/locate biome` in-game, and using the arrow keys to navigate
