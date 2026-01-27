@@ -71,12 +71,13 @@ const config = {
   ],
 
   kit: {
+    paths: {
+      base: "/modpack-dev-wiki",
+      relative: false
+    },
     adapter: adapter({
       fallback: '404.html'
-    }),
-    paths: {
-      relative: "/modpack-dev-wiki"
-    }
+    })
   },
 
   extensions: [".svelte", ".svx"],
