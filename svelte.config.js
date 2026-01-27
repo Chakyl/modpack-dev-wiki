@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-auto";
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { escapeSvelte, mdsvex } from "mdsvex";
 import { createHighlighter } from "shiki";
@@ -71,7 +71,12 @@ const config = {
   ],
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: '404.html'
+    }),
+    paths: {
+      base: process.argv.includes('dev') ? '' : "/modpack-dev-wiki"
+    }
   },
 
   extensions: [".svelte", ".svx"],

@@ -12,7 +12,7 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: "https://chakyl.github.io/modpack-dev-wiki/",
+  base: "/modpack-dev-wiki/",
   build: {
     cssMinify: "lightningcss",
   },
