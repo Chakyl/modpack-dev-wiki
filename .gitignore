@@ -10,3 +10,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 src/routes/wiki/template/+page.svx
 src/routes/guide/template/+page.svx
+.obsidian
