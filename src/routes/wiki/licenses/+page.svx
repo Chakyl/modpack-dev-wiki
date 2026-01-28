@@ -1,0 +1,31 @@
+---
+title: Licenses (WIP)
+tags:
+description: An overview of common licenses, what they mean, and which one is right for you
+---
+
+<script lang="ts">
+import { Discord } from '$lib/reusables';
+</script>
+
+# Licenses
+
+Licenses are ways for developers to define what others can or cannot do with their work. Licenses can be applied to nearly everything, but Mods, Modpacks, and Resource Packs are the most relevant here. You should be aware of a projects license if you choose to do any of the following:
+- Distribute the project on a hosting site that the original work is not hosted on
+- Use any part of the projects assets or code in any way, besides simply including it in a modpack
+- Port or fork the project 
+
+:::info
+
+No matter what a project's license says, if it is hosted on a platform such as Curseforge or Modrinth, you are free to include it in a modpack as long as it is hosted on the same platform. 
+
+:::
+
+## Common Licenses
+
+MIT
+
+All Rights Reserved / ARR
+
+LGPL
+
