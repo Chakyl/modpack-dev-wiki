@@ -1,11 +1,6 @@
 ---
 title: Modifying mob spawns
-tags:
-  - mobs
-  - lithostitched
-  - guide
-  - incontrol
-  - kubejs
+tags: mobs, lithostitched, guide, incontrol, kubejs
 description: Guide on modifying mob spawns with various methods
 ---
 
