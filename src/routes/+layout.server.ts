@@ -1,5 +1,7 @@
 import type { LayoutServerLoad } from "./$types";
 
+export const prerender = true
+
 type PackFormatEntry = {
   data_pack_version: number;
   stable: boolean;
