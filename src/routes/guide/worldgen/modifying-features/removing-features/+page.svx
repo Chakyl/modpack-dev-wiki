@@ -1,12 +1,6 @@
 ---
 title: Removing features from your modpack
-tags:
-  - guide
-  - worldgen
-  - features
-  - datapack
-  - tutorial
-  - lithostitched
+tags: guide, worldgen, features, datapack, tutorial, lithostitched
 description: Removing worldgen features to your game with datapacks and Lithostitched
 ---
 
