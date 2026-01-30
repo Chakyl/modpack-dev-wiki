@@ -21,9 +21,8 @@ There are several methods to edit mob spawns, each with varying levels of comple
 Lithostitched can edit mob spawns a datapack adding a worldgen modifier. You have the option of either adding or removing spawns from biomes. Some examples pulled directly from the [Lithostitched wiki](https://github.com/Apollounknowndev/lithostitched/wiki/Worldgen-Modifier-Types) are found below.
 
 Adding spawns:
-in `data/edit_spawns/lithostitched/worldgen_modifier/add_witches.json`
 Adds witch spawns to swamps
-```json:add_witches.json
+```json:data/edit_spawns/lithostitched/worldgen_modifier/add_witches.json
 {
   "type": "lithostitched:add_biome_spawns",
   "biomes": "#c:swamp",
@@ -37,9 +36,8 @@ Adds witch spawns to swamps
 ```
 
 Removing spawns:
-in `data/edit_spawns/lithostitched/worldgen_modifier/remove_zombies.json`
 Removes zombie spawns from the overworld
-```json:remove_zombies.json
+```json:data/edit_spawns/lithostitched/worldgen_modifier/remove_zombies.json
 {
   "type": "lithostitched:remove_biome_spawns",
   "biomes": "#minecraft:is_overworld",

@@ -1,0 +1,106 @@
+---
+title: Removing content, mainly blocks/items from the game
+tags:
+description:
+---
+
+<script lang="ts">
+import { Discord } from '$lib/reusables';
+</script>
+
+# Removing blocks and items from the game
+
+Adding content to your modpack is great, but sometimes mods can either add things that just don't fit into your vision for the pack, or maybe just have overlap with another mod you have installed. This article will go into some methods of streamlining your pack and removing content from your pack.
+
+# Removing items
+
+Some mods that're useful for removing items from your game are [Reliable Remover](https://www.curseforge.com/minecraft/mc-mods/reliable-remover),  [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs), and [Registry Blocker](https://www.curseforge.com/minecraft/mc-mods/registry-blocker).
+
+## Reliable Remover
+
+[Reliable Remover](https://www.curseforge.com/minecraft/mc-mods/reliable-remover) is a simple json-based tool that can remove the functionality and obtainment methods for various items. More details of the mods functionality, as well as examples of usages can be found on the mod page.
+
+## KubeJS
+
+This KubeJS script removes everything in the `global.nukelist` array from all tags, recipes, and recipe viewers.
+
+:::warning
+
+The following script only works for 1.20.1
+
+:::
+
+```js:kubejs/server_scripts/nuking.js
+global.nukelist = [
+    'modid:item',
+    'modid:fluid',
+    '@modid',
+]
+
+ServerEvents.tags('item', event => {
+   event.removeAllTagsFrom(global.nukelist)
+   event.add('modpack:nukelist', global.nukelist)
+   event.add('c:hidden_from_recipe_viewers', global.nukelist)
+})
+
+ServerEvents.tags('fluid', event => {
+   event.removeAllTagsFrom(global.nukelist)
+   event.add('modpack:nukelist', global.nukelist)
+   event.add('c:hidden_from_recipe_viewers', global.nukelist)
+})
+
+ServerEvents.recipes(event => {
+   event.remove({ input: global.nukelist })
+   event.remove({ output: global.nukelist })
+})
+```
+
+The following can be put in client scripts to add a tooltip notifying the user that an item has been removed, and to report the issue to the modpack developers in cases of the nukelist not being thorough.
+
+```js:kubejs/client_sripts/tooltipNuking.js
+ItemEvents.tooltip(event => {
+  event.add([global.nukelist], Text.red('This item has been removed, report to the modpack developers how you obtained this item!'))
+})
+```
+
+If [LootJS](https://www.curseforge.com/minecraft/mc-mods/lootjs) is installed, the following can be added to the `nuking.js` server script previously mentioned to remove it from loot tables, entity drops, and other methods of obtaining items.
+
+```js:kubejs/server_scripts/nuking.js
+LootJS.modifiers(event => {
+   event
+     .addLootTypeModifier(
+        LootType.ENTITY,
+        LootType.UNKNOWN,
+        LootType.BLOCK,
+        LootType.CHEST,
+        LootType.FISHING,
+        LootType.GIFT,
+        LootType.ADVANCEMENT_ENTITY,
+        LootType.ADVANCEMENT_REWARD,
+        LootType.PIGLIN_BARTER,
+     )
+     .removeLoot(global.nukelist);
+})
+```
+
+:::tip
+
+Running the in-game commands `/kubejs hand`, '/kubejs hotbar', and `/kubejs inventory` are quick ways to get the IDs to put into the array.
+
+:::
+
+:::info
+
+Note that neither Reliable Remover nor KubeJS fully removes an item from being registered in-game, and only attempts to remove methods of obtaining said item.
+
+:::
+
+## Registry Blocker
+
+[Registry Blocker](https://www.curseforge.com/minecraft/mc-mods/registry-blocker) is a mod that blocks registries. It is as invasive and destructive as it sounds. Instructions on how to use it is documented on the mod page.
+
+:::warning
+
+Messing with the game registry with mods such as Registry Blocker can be unsafe, and may lead to issues such as crashing, data validation errors, and log spam. It should only be considered as a last resort if neither a mods config, KubeJS, Reliable Remover, or datapacks work to remove an item.
+
+:::

@@ -14,8 +14,7 @@ Removing worldgen features is most easily done through worldgen modifiers, such 
 
 Example worldgen modifier
 Removes Copper Ore generation from the Overworld.
-in `data/remove_ores/lithostitched/worldgen_modifier/remove_copper.json`
-```json:remove_copper.json
+```json:data/remove_ores/lithostitched/worldgen_modifier/remove_copper.json
 {
   "type": "lithostitched:remove_features",
   "biomes": "#minecraft:is_overworld",
