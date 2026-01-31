@@ -20,6 +20,12 @@ Some mods that're useful for removing items from your game are [Reliable Remover
 
 [Reliable Remover](https://www.curseforge.com/minecraft/mc-mods/reliable-remover) is a simple json-based tool that can remove the functionality and obtainment methods for various items. More details of the mods functionality, as well as examples of usages can be found on the mod page.
 
+:::tip
+
+Running the in-game commands `/reliable_remover hand`, `/reliable_remover hotbar`, and `/reliable_remover inventory` are quick ways to get the IDs to put into the array.
+
+:::
+
 ## KubeJS
 
 This KubeJS script removes everything in the `global.nukelist` array from all tags, recipes, and recipe viewers.
@@ -101,6 +107,7 @@ Note that neither Reliable Remover nor KubeJS fully removes an item from being r
 
 :::warning
 
-Messing with the game registry with mods such as Registry Blocker can be unsafe, and may lead to issues such as crashing, data validation errors, and log spam. It should only be considered as a last resort if neither a mods config, KubeJS, Reliable Remover, or datapacks work to remove an item.
+Messing with the game registry with mods such as Registry Blocker is unsafe, and may lead to issues such as data validation errors, log spam, and even crashes. It should only be considered as a last resort if neither a mods config, KubeJS, Reliable Remover, or datapacks work to remove an item.
 
 :::
+
