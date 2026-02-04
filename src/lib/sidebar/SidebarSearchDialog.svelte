@@ -77,7 +77,7 @@
               windowInfo.isNavOpen = false;
             }
           }}
-          href={`${base}${result.url}`}>
+          href={linkHandler(result.url)}>
           <div class="p-2 my-2 rounded-sm hover:bg-black/20 motion-safe:transition-all">
             <p class="text-stone-200 text-lg">
               {@html result.title}
