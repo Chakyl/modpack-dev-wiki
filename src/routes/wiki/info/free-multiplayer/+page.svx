@@ -1,5 +1,5 @@
 ---
-title: Adding biomes to your modpack
+title: Free Multiplayer
 tags: info, multiplayer, free, server
 description:
     Exploring options for free multiplayer in modded Minecraft
