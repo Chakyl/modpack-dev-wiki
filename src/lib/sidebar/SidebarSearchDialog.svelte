@@ -1,24 +1,12 @@
 <script lang="ts">
   import { windowInfo } from "$lib/stores.svelte";
   import { createSearchIndex, search } from "../search";
-  import { base } from "$app/paths";
 
   type Props = {
     results: any[];
     keyActivated?: boolean;
   };
 
-  export const linkHandler = (link: string) => {
-    if (process.env.NODE_ENV === "development") {
-      return link;
-    }
-
-    if (link === "/") {
-      return base;
-    }
-
-    return base + link;
-  };
   let { results = $bindable([]), keyActivated }: Props = $props();
   let dialog: HTMLDialogElement;
 
@@ -36,7 +24,7 @@
   export async function showModal() {
     dialog.showModal();
     if (searchState === "waiting") {
-      const posts = await fetch(linkHandler("search.json")).then(r => r.json());
+      const posts = await fetch("/search.json").then(r => r.json());
       createSearchIndex(posts);
     }
     searchState = "done";
@@ -77,7 +65,7 @@
               windowInfo.isNavOpen = false;
             }
           }}
-          href={linkHandler(result.url)}>
+          href={result.url}>
           <div class="p-2 my-2 rounded-sm hover:bg-black/20 motion-safe:transition-all">
             <p class="text-stone-200 text-lg">
               {@html result.title}
