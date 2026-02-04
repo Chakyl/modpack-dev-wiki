@@ -45,24 +45,14 @@
   <SidebarPage label="mcmeta Filtering" icon={IconBraces} page="/wiki/info/mcmeta-filtering" />
 </SidebarCategory>
 
-<SidebarCategory name="Concepts" icon={IconConcepts}>
-  <SidebarPage label="Commands" icon={IconCommand} page="/wiki/concepts/commands" />
-  <SidebarPage label="Target Selectors" icon={IconAt} page="/wiki/concepts/target-selectors" />
-  <SidebarPage label="Coordinates" icon={IconTilde} page="/wiki/concepts/coordinates" />
-  <SidebarPage label="Item Components" icon={IconComponents} page="/wiki/concepts/item-components" />
-  <SidebarPage label="Styled/JSON Text" icon={IconBraces} page="/wiki/concepts/text" />
-  <SidebarPage label="Resource Locations" icon={IconResourceLocation} page="/wiki/concepts/resource-locations" />
-  <SidebarPage label="Ranges" icon={IconRange} page="/wiki/concepts/ranges" />
+<SidebarCategory name="Creative" icon={IconConcepts}>
+  <SidebarPage label="Pack Design" icon={IconCommand} page="/wiki/creative/pack-design" />
 </SidebarCategory>
 
-<SidebarCategory name="Datapack Files" icon={IconZip}>
-  <SidebarPage label="Functions" icon={IconPennant} page="/wiki/files/functions" />
-  <SidebarPage label="Predicates" icon={IconPredicate} page="/wiki/files/predicates" />
-  <SidebarPage label="Advancements" icon={IconStar} page="/wiki/files/advancements" />
-  <SidebarPlaceholder label="Loot Tables" icon={IconChest} />
-  <SidebarPage label="Recipes" icon={IconGrid} page="/wiki/files/recipes" />
-  <SidebarPage label="Dialogs" icon={IconDialog} page="/wiki/files/dialogs" />
-  <SidebarPage label="Tags" icon={IconFilters} page="/wiki/files/tags" />
+<SidebarCategory name="Organization" icon={IconZip}>
+  <SidebarPage label="Planning" icon={IconPennant} page="/wiki/organization/planning" />
+  <SidebarPage label="Project Management" icon={IconPennant} page="/wiki/organization/project-management" />
+  <SidebarPage label="Marketing" icon={IconPennant} page="/wiki/organization/marketing" />
 </SidebarCategory>
 
 <SidebarCategory name="Command Reference" icon={IconCommands}>

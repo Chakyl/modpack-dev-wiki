@@ -1,0 +1,21 @@
+---
+title: Project Management
+description:
+  Mmm projkect 
+---
+
+<script lang="ts">
+import { Discord } from '$lib/reusables';
+</script>
+
+# Project Management
+
+## Working with mod devs
+
+## Working with others
+
+## Getting help 
+
+## Maintaining motivation
+
+## Playtesting

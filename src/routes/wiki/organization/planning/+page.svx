@@ -1,0 +1,29 @@
+---
+title: Planning
+description:
+  How to start planning a pack
+---
+
+# Planning
+
+Despite modpacks being loose collections of mods, there's a lot of work that goes into "gluing" these mods together to make a cohesive experience. This involves planning out progression, removing unused or unwanted contents from mods, and just general game design.
+
+This page will take you through the planning phase of your modpack, and what you can expect to have to take on when making a modpack.
+
+
+## Prerequisites
+Most of this works involves editing json files, writing KubeJs/Craftweaker scripts, and editing configs.
+
+It's essential you have have the following (or equivalents) to keep yourself and your pack properly organized:
+
+- Text editor like [VSCodium](https://vscodium.com/) or [Visual Studio Code](https://code.visualstudio.com/download)
+- LINK TO VERSION CONTROL PAGE for ensuring work doesn't get deleted
+- Some tool to take notes such as [Obsidian](https://obsidian.md/) or any other text editors/paper
+
+Some other things that will improve your experience creating modpacks is technical knowledge of Minecraft, experience playing lots of different kinds of modpacks, and general programming experience. None of these things are required though by any means.
+
+## Picking a concept
+
+## Mod selection
+
+## Limiting scope
