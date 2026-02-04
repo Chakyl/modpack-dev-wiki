@@ -25,7 +25,7 @@
   export async function showModal() {
     dialog.showModal();
     if (searchState === "waiting") {
-      const posts = await fetch(`${base}search.json`).then(r => r.json());
+      const posts = await fetch(`${base}/search.json`).then(r => r.json());
       createSearchIndex(posts);
     }
     searchState = "done";
