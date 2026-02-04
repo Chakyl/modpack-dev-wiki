@@ -1,13 +1,24 @@
 <script lang="ts">
   import { windowInfo } from "$lib/stores.svelte";
   import { createSearchIndex, search } from "../search";
-  import { base } from '$app/paths';
+  import { base } from "$app/paths";
 
   type Props = {
     results: any[];
     keyActivated?: boolean;
   };
 
+  export const linkHandler = (link: string) => {
+    if (process.env.NODE_ENV === "development") {
+      return link;
+    }
+
+    if (link === "/") {
+      return base;
+    }
+
+    return base + link;
+  };
   let { results = $bindable([]), keyActivated }: Props = $props();
   let dialog: HTMLDialogElement;
 
@@ -25,7 +36,7 @@
   export async function showModal() {
     dialog.showModal();
     if (searchState === "waiting") {
-      const posts = await fetch(`${base}search.json`).then(r => r.json());
+      const posts = await fetch(linkHandler("search.json")).then(r => r.json());
       createSearchIndex(posts);
     }
     searchState = "done";
