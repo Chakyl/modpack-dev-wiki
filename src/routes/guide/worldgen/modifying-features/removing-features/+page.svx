@@ -13,15 +13,16 @@ import { Discord } from '$lib/reusables';
 Removing worldgen features is most easily done through worldgen modifiers, such as those provided through [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched). More information on Lithostitched Worldgen Modifiers can be found on their [wiki](https://github.com/Apollounknowndev/lithostitched/wiki/Intro-to-Worldgen-Modifiers), and can be created using their [generator site](https://lithostitched.vercel.app/lithostitched/worldgen-modifier/).
 
 Example worldgen modifier
-Removes Copper Ore generation from the Overworld.
-```json:data/remove_ores/lithostitched/worldgen_modifier/remove_copper.json
+Removes Coal Ore generation from the Overworld.
+```json:data/remove_ores/lithostitched/worldgen_modifier/remove_coal.json
 {
   "type": "lithostitched:remove_features",
   "biomes": "#minecraft:is_overworld",
   "features": [
-    "minecraft:ore_copper",
-    "minecraft:ore_copper_large"
-  ]
+    "minecraft:ore_coal_lower",
+    "minecraft:ore_coal_upper"
+  ],
+  "step": "underground_ores"
 }
 ```
 

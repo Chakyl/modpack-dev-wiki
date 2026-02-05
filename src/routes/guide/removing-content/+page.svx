@@ -91,7 +91,7 @@ LootJS.modifiers(event => {
 
 :::tip
 
-Running the in-game commands `/kubejs hand`, '/kubejs hotbar', and `/kubejs inventory` are quick ways to get the IDs to put into the array.
+Running the in-game commands `/kubejs hand`, `/kubejs hotbar`, and `/kubejs inventory` are quick ways to get the IDs to put into the array.
 
 :::
 

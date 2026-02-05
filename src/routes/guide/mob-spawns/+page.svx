@@ -25,7 +25,7 @@ Adds witch spawns to swamps
 ```json:data/edit_spawns/lithostitched/worldgen_modifier/add_witches.json
 {
   "type": "lithostitched:add_biome_spawns",
-  "biomes": "#c:swamp",
+  "biomes": "#c:is_swamp",
   "spawners": {
     "type": "minecraft:witch",
     "weight": 450,
