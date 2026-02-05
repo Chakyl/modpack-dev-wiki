@@ -1,6 +1,6 @@
 ---
 title: Licenses (WIP)
-tags:
+tags: todo
 description: An overview of common licenses, what they mean, and which one is right for you
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 
-tags: 
+title: Pack Design
+tags: todo
 description:
     placeholder
 ---
