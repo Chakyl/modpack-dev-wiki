@@ -1,5 +1,5 @@
 ---
-title: Removing content, mainly blocks/items from the game
+title: Removing items from the game
 tags: todo
 description:
 ---
@@ -8,17 +8,13 @@ description:
 import { Discord } from '$lib/reusables';
 </script>
 
-# Removing blocks and items from the game
+# Removing items from the game
 
-Adding content to your modpack is great, but sometimes mods can either add things that just don't fit into your vision for the pack, or maybe just have overlap with another mod you have installed. This article will go into some methods of streamlining your pack and removing content from your pack.
-
-# Removing items
-
-Some mods that're useful for removing items from your game are [Reliable Remover](https://www.curseforge.com/minecraft/mc-mods/reliable-remover),  [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs), and [Registry Blocker](https://www.curseforge.com/minecraft/mc-mods/registry-blocker).
+Adding content to your modpack is great, but sometimes mods can either add things that just don't fit into your vision for the pack, or maybe just have overlap with another mod you have installed. This article will go into some methods of streamlining your pack and removing content from your pack. Some mods that're useful for removing items from your game are [Reliable Remover](https://www.curseforge.com/minecraft/mc-mods/reliable-remover),  [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs), and [Registry Blocker](https://www.curseforge.com/minecraft/mc-mods/registry-blocker).
 
 ## Reliable Remover
 
-[Reliable Remover](https://www.curseforge.com/minecraft/mc-mods/reliable-remover) is a simple json-based tool that can remove the functionality and obtainment methods for various items. More details of the mods functionality, as well as examples of usages can be found on the mod page.
+[Reliable Remover](https://www.curseforge.com/minecraft/mc-mods/reliable-remover) is a simple json-based tool that can remove the functionality and obtainment methods for various items. More details of the mods functionality, as well as examples of usages can be found on its [wiki](https://moddedmc.wiki/en/project/reliable-remover/latest/docs).
 
 :::tip
 
