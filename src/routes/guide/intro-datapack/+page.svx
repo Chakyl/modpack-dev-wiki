@@ -9,6 +9,40 @@ description:
 import { Discord } from '$lib/reusables';
 </script>
 
-# Header
+# Intro to Datapacks
 
-This article is not written yet...
+A datapack is a collection of data stored in a folder or `.zip` file used to modify elements of the game. Due to them being predominately JSON-based, they are relatively easy to get into with no prior experience. Both Vanilla Minecraft and most mods use data in their implementation, meaning that they can be modified via datapacks. Common applications of data in vanilla/mods are recipes, tags, advancements, and worldgen, meaning that these elements of the game can be added, removed, and modified with datapacks. 
+
+## Making a datapack
+
+1. Create a folder
+This can be done by right-clicking your desktop or inside another directory, and pressing "New" -> "Folder". You can also press `CTRL + Shift + N` as a shortcut. You can name this folder anything.
+2. Open the folder and create the `data` folder and `pack.mcmeta` file
+After you've opened the folder you just created, create another folder inside of it named `data`. Then, create a file named `pack.mcmeta` by right clicking, pressing "New" -> "Text Document", then renaming the entire thing to `pack.mcmeta`, including the file extension.
+
+:::tip
+
+Enabling file extensions is a must-have when doing nearly anything modpack related. On Windows, they can be turned on by going to Settings -> System -> Advanced -> File Explorer, then clicking the "Show File Extensions" tick.
+
+![[Pasted image 20260208164841.png]]
+
+:::
+
+3. Put information into the `pack.mcmeta` file
+Double-left click the file to open it, 
+
+:::tip
+
+Misode has many tools for datapack creation, including a [datapack generator](https://misode.github.io) site as well as a place to see all of the [default Minecraft data/asset files](https://github.com/misode/mcmeta). These are very useful for streamlining the creation process of them, as well as simply being able to view the files to reference.
+
+:::
+
+## Loading datapacks
+
+To load datapacks, ordinarily you'd have to manually place the file into your worlds `datapacks` folder, and it would not persist between worlds. However, in a modded environment, there are mods such as [Open Loader](https://www.curseforge.com/minecraft/mc-mods/open-loader) and [Paxi](https://www.curseforge.com/minecraft/mc-mods/paxi) that automatically load datapacks placed in their config folder, or in other directories such as the `<root>/datapacks` directory that many launchers support. Additionally, KubeJS can act as a datapack loader, with `<root>/kubejs/data/...` loading data files put in it. Data loaded through KubeJS will have higher priority than ones loaded through Open Loader or Paxi.
+
+## Related topics:
+
+- Neo/Forge data conditions
+- [Mcmeta filters](https://chakyl.github.io/modpack-dev-wiki/wiki/info/mcmeta-filtering)
+

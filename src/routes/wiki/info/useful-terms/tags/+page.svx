@@ -1,0 +1,15 @@
+---
+title: Tag definition
+tags:
+description: placeholder
+---
+
+<script lang="ts">
+import { Discord } from '$lib/reusables';
+</script>
+
+# Tags
+
+Tags act as references to groups of registry entries, letting Minecraft treat multiple items, blocks, or entities as a single category. For example, the tag `#minecraft:logs` represents all log blocks, so commands or recipes using that tag automatically apply to oak logs, birch logs, and any other block included in it. Tags are one of the most powerful data pack features for organizing and modifying game behavior without editing core files.
+
+More information on tags: https://minecraft.wiki/w/Tag_(Java_Edition)

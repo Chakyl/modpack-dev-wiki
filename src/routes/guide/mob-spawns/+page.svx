@@ -71,7 +71,7 @@ In Control is not available on Fabric.
 
 :::
 
-\<page needs useful IC examples>
+(page needs useful IC examples)
 
 # KubeJS
 

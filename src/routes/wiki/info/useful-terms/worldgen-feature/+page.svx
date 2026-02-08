@@ -1,0 +1,13 @@
+---
+title: Worldgen feature definition
+tags:
+description: placeholder
+---
+
+<script lang="ts">
+import { Discord } from '$lib/reusables';
+</script>
+
+# Feature
+
+Worldgen features are decorators generated in each chunk after terrain generation, such as ores, grass, and trees. They differ from structures in that they are usually smaller and generate dynamically based on 

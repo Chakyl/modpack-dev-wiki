@@ -1,0 +1,13 @@
+---
+title: Neo/Forge data loading conditions
+tags:
+description: Overview on Neo/Forge's data loading conditions and how to use them
+---
+
+<script lang="ts">
+import { Discord } from '$lib/reusables';
+</script>
+
+# Neo/Forge data loading conditions
+
+Both Forge and Neoforge have additional datapack functionality where both modders and modpack developers can dynamically disable/enable data files based on given criteria. These criteria can range from checking if a tag/item exists in the registry, or simply disabling the file in it's entirety. 
