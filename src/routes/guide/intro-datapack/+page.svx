@@ -72,7 +72,23 @@ To find the correct data type for what you want to override/create, there are a 
 ![[Pasted image 20260208201723.png]]
 
 #### 6. Create the data file
-Once you've figured out exactly what you want to change by looking at the base data, you can override it by copying the exact filepath presented. 
+Once you've figured out exactly what you want to change by looking at the base data, you can override it by copying the exact filepath presented. In this case, we will be doing the following:
+- Changing Minecraft's "Stick" recipe
+- Changing Oreganized's "Lead Bolt" recipe
+- Adding a new recipe converting diamonds to dirt
+
+<img src="/media/changed-stick-recipe.png" alt="Changed stick recipe" />
+
+
+![[Pasted image 20260209155921.png]]
+![[Pasted image 20260209155306.png]]
+![[Pasted image 20260209155407.png]]
+
+:::tip
+
+You can use Misode's [datapack generator](https://misode.github.io) to easily create data files using vanilla data types
+
+:::
 
 ## Loading datapacks
 
