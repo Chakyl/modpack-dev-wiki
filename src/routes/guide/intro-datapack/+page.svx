@@ -7,11 +7,9 @@ description:
 
 <script lang="ts">
 import { Discord } from '$lib/reusables';
-import ChangedBoltRecipe from '$lib/media/changed-bolt-recipe.png';
-import ChangedStickRecipe from '$lib/media/changed-stick-recipe.png';
+
 import DataFileStructure from '$lib/media/data-file-structure.png';
 import Namespace from '$lib/media/namespaces.png';
-import NewDirtRecipe from '$lib/media/new-dirt-recipe.png';
 import OreganizedSource from '$lib/media/oreganized-source.png';
 import OreganizedWinrar from '$lib/media/oreganized-winrar.png';
 import WindowsSettings from '$lib/media/windows-settings.png';
@@ -85,13 +83,68 @@ Once you've figured out exactly what you want to change by looking at the base d
 - Changing Oreganized's "Lead Bolt" recipe
 - Adding a new recipe converting diamonds to dirt
 
+```json:my-datapack/data/minecraft/recipe/stick.json
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sticks",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:stick"
+  }
+}
+```
 
-<img src={ChangedStickRecipe} alt="Changed stick recipe" />
+```json:my-datapack/data/oreganized/recipe/lead_bolt.json
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "tag": "c:ingots/lead"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:feather"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "C"
+  ],
+  "result": {
+    "count": 2,
+    "id": "oreganized:lead_bolt"
+  }
+}
+```
 
-<img src={ChangedBoltRecipe} alt="Changed bolt recipe" />
-
-<img src={NewDirtRecipe} alt="New dirt recipe" />
-
+```json:my-datapack/data/my_namespace/recipe/dirt_to_diamond.json
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dirt"
+  }
+}
+```
 
 :::tip
 
