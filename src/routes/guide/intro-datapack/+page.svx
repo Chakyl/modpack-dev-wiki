@@ -29,15 +29,13 @@ This can be done by right-clicking your desktop or inside another directory, and
 #### 2. Open the folder and create the `data` folder and `pack.mcmeta` file
 After you've opened the folder you just created, create another folder inside of it named `data`. Then, create a file named `pack.mcmeta` by right clicking, pressing "New" -> "Text Document", then renaming the entire thing to `pack.mcmeta`, including the file extension. Your screen should look similar to the image below.
 
-<img src={WindowsSettings} alt="Windows Settings" />
-
-![[Pasted image 20260208190634.png]]
+<img src={DataFileStructure} alt="Data File Structure" />
 
 :::tip
 
 Enabling file extensions is a must-have when doing nearly anything modpack related. On Windows, they can be turned on by going to Settings -> System -> Advanced -> File Explorer, then clicking the "Show File Extensions" tick.
 
-![[Pasted image 20260208164841.png]]
+<img src={WindowsSettings} alt="Windows Settings" />
 
 :::
 
@@ -67,7 +65,7 @@ A Namespace determines "who" a set of data belongs to in a datapack. If you're a
 
 For the purposes of this guide, I will be doing all three. 
 
-![[Pasted image 20260208193742.png]]
+<img src={Namespace} alt="Namespace" />
 
 #### 5. Create "data type" folders inside of the namespace folders
 The data type folders determine what "kind" of data is to be created/modified. For the purposes of this example, we will be changing recipes. On 1.20.1 and below, the data type is called `recipes`, while on 1.21.1 and above, it's called `recipe`. 
@@ -77,9 +75,9 @@ To find the correct data type for what you want to override/create, there are a 
 [Oreganized mod page](https://www.curseforge.com/minecraft/mc-mods/oreganized)
 [Oreganized source](https://github.com/TeamGalena/oreganized/tree/1.21.x)
 
-![[Pasted image 20260208201625.png]]
 
-![[Pasted image 20260208201723.png]]
+<img src={OreganizedSource} alt="Oreganized source" />
+<img src={OreganizedWinrar} alt="Oreganized WinRAR" />
 
 #### 6. Create the data file
 Once you've figured out exactly what you want to change by looking at the base data, you can override it by copying the exact filepath presented. In this case, we will be doing the following:
@@ -88,10 +86,12 @@ Once you've figured out exactly what you want to change by looking at the base d
 - Adding a new recipe converting diamonds to dirt
 
 
+<img src={ChangedStickRecipe} alt="Changed stick recipe" />
 
-![[Pasted image 20260209155921.png]]
-![[Pasted image 20260209155306.png]]
-![[Pasted image 20260209155407.png]]
+<img src={ChangedBoltRecipe} alt="Changed bolt recipe" />
+
+<img src={NewDirtRecipe} alt="New dirt recipe" />
+
 
 :::tip
 
