@@ -15,10 +15,13 @@ A datapack is a collection of data stored in a folder or `.zip` file used to mod
 
 ## Making a datapack
 
-1. Create a folder
+#### 1. Create a folder
 This can be done by right-clicking your desktop or inside another directory, and pressing "New" -> "Folder". You can also press `CTRL + Shift + N` as a shortcut. You can name this folder anything.
-2. Open the folder and create the `data` folder and `pack.mcmeta` file
-After you've opened the folder you just created, create another folder inside of it named `data`. Then, create a file named `pack.mcmeta` by right clicking, pressing "New" -> "Text Document", then renaming the entire thing to `pack.mcmeta`, including the file extension.
+
+#### 2. Open the folder and create the `data` folder and `pack.mcmeta` file
+After you've opened the folder you just created, create another folder inside of it named `data`. Then, create a file named `pack.mcmeta` by right clicking, pressing "New" -> "Text Document", then renaming the entire thing to `pack.mcmeta`, including the file extension. Your screen should look similar to the image below.
+
+![[Pasted image 20260208190634.png]]
 
 :::tip
 
@@ -28,14 +31,48 @@ Enabling file extensions is a must-have when doing nearly anything modpack relat
 
 :::
 
-3. Put information into the `pack.mcmeta` file
-Double-left click the file to open it, 
+#### 3. Put information into the `pack.mcmeta` file
+pack.mcmeta files include information on what Minecraft version a datapack is compatible for, among other things. To supply the correct information on what to include in a datapack, use Misode's [pack.mcmeta generator](https://misode.github.io/pack-mcmeta/) site to create the contents of the file. The only thing that matters here is the `pack_format` field, which should be `15` if the datapack is made for Minecraft version `1.20.1`, and `48` if made for Minecraft version `1.21.1`. Other pack formats for different versions can be found [here](https://minecraft.wiki/w/Pack_format).
 
-:::tip
+```json:pack.mcmeta - 1.20.1
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "pack.mcmeta file for 1.20.1"
+  }
+}
+```
 
-Misode has many tools for datapack creation, including a [datapack generator](https://misode.github.io) site as well as a place to see all of the [default Minecraft data/asset files](https://github.com/misode/mcmeta). These are very useful for streamlining the creation process of them, as well as simply being able to view the files to reference.
+```json:pack.mcmeta - 1.21.1
+{
+  "pack": {
+    "pack_format": 48,
+    "description": "pack.mcmeta file for 1.21.1"
+  }
+}
+```
 
-:::
+#### 4. Create a "Namespace" folder inside data folder
+A Namespace determines "who" a set of data belongs to in a datapack. If you're adding custom content with a datapack, and not editing anything from the base game or another mod, you should create your own namespace, ex; `my_namespace`. But if you're modifying files in vanilla or in other mods, you should use theirs instead, otherwise they wouldn't be overridden correctly, ex; `minecraft`, `oreganized`. 
+
+For the purposes of this guide, I will be doing all three. 
+
+![[Pasted image 20260208193742.png]]
+
+#### 5. Create "data type" folders inside of the namespace folders
+The data type folders determine what "kind" of data is to be created/modified. For the purposes of this example, we will be changing recipes. On 1.20.1 and below, the data type is called `recipes`, while on 1.21.1 and above, it's called `recipe`. 
+
+To find the correct data type for what you want to override/create, there are a couple options. For vanilla Minecraft, you can use sites like [MCasset](https://mcasset.cloud/1.21.1/) or [Misode](https://github.com/misode/mcmeta?tab=readme-ov-file#repository-structure) to see the default data for the game. For mods, you can either view their source code (usually provided on their Curseforge / Modrinth sites, though not always) or open the mod `.jar` file in your modpack `/mods` directory with a program such as [WinRAR](https://www.win-rar.com/download.html?&L=0) or [7-Zip](https://www.7-zip.org).
+
+[Oreganized mod page](https://www.curseforge.com/minecraft/mc-mods/oreganized)
+[Oreganized source](https://github.com/TeamGalena/oreganized/tree/1.21.x)
+
+![[Pasted image 20260208201625.png]]
+
+![[Pasted image 20260208201723.png]]
+
+#### 6. Create the data file
+Once you've figured out exactly what you want to change by looking at the base data, you can override it by copying the exact filepath presented. 
 
 ## Loading datapacks
 
