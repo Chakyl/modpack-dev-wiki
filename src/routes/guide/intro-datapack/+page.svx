@@ -7,6 +7,14 @@ description:
 
 <script lang="ts">
 import { Discord } from '$lib/reusables';
+import ChangedBoltRecipe from '$lib/media/changed-bolt-recipe.png';
+import ChangedStickRecipe from '$lib/media/changed-stick-recipe.png';
+import DataFileStructure from '$lib/media/data-file-structure.png';
+import Namespace from '$lib/media/namespaces.png';
+import NewDirtRecipe from '$lib/media/new-dirt-recipe.png';
+import OreganizedSource from '$lib/media/oreganized-source.png';
+import OreganizedWinrar from '$lib/media/oreganized-winrar.png';
+import WindowsSettings from '$lib/media/windows-settings.png';
 </script>
 
 # Intro to Datapacks
@@ -20,6 +28,8 @@ This can be done by right-clicking your desktop or inside another directory, and
 
 #### 2. Open the folder and create the `data` folder and `pack.mcmeta` file
 After you've opened the folder you just created, create another folder inside of it named `data`. Then, create a file named `pack.mcmeta` by right clicking, pressing "New" -> "Text Document", then renaming the entire thing to `pack.mcmeta`, including the file extension. Your screen should look similar to the image below.
+
+<img src={WindowsSettings} alt="Windows Settings" />
 
 ![[Pasted image 20260208190634.png]]
 
@@ -77,7 +87,6 @@ Once you've figured out exactly what you want to change by looking at the base d
 - Changing Oreganized's "Lead Bolt" recipe
 - Adding a new recipe converting diamonds to dirt
 
-<img src="/media/changed-stick-recipe.png" alt="Changed stick recipe" />
 
 
 ![[Pasted image 20260209155921.png]]
@@ -99,4 +108,3 @@ To load datapacks, ordinarily you'd have to manually place the file into your wo
 - Neo/Forge data conditions
 - [Mcmeta filters](https://chakyl.github.io/modpack-dev-wiki/wiki/info/mcmeta-filtering)
 
-g
