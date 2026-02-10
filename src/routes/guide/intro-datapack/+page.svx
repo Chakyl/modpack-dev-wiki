@@ -13,6 +13,7 @@ import Namespace from '$lib/media/namespaces.png';
 import OreganizedSource from '$lib/media/oreganized-source.png';
 import OreganizedWinrar from '$lib/media/oreganized-winrar.png';
 import WindowsSettings from '$lib/media/windows-settings.png';
+import DatapackZip from '$lib/media/datapack-zip.png';
 </script>
 
 # Intro to Datapacks
@@ -71,6 +72,7 @@ The data type folders determine what "kind" of data is to be created/modified. F
 To find the correct data type for what you want to override/create, there are a couple options. For vanilla Minecraft, you can use sites like [MCasset](https://mcasset.cloud/1.21.1/) or [Misode](https://github.com/misode/mcmeta?tab=readme-ov-file#repository-structure) to see the default data for the game. For mods, you can either view their source code (usually provided on their Curseforge / Modrinth sites, though not always) or open the mod `.jar` file in your modpack `/mods` directory with a program such as [WinRAR](https://www.win-rar.com/download.html?&L=0) or [7-Zip](https://www.7-zip.org).
 
 [Oreganized mod page](https://www.curseforge.com/minecraft/mc-mods/oreganized)
+
 [Oreganized source](https://github.com/TeamGalena/oreganized/tree/1.21.x)
 
 
@@ -152,7 +154,12 @@ You can use Misode's [datapack generator](https://misode.github.io) to easily cr
 
 :::
 
-## Loading datapacks
+#### 7. Zip the datapack (optional)
+Once you've created the datapack, you can zip/compress it to make it easier to share standalone, or leave it as a folder. To zip the file, select both the `data` folder and `pack.mcmeta` file in the original folder, right click -> compress to -> ZIP file. Zipped files are easier to share but harder to edit, so if you're going to actively be making changes to the datapack, you may want to leave it as a folder.
+
+<img src={DatapackZip} alt="Zipping a datapack" />
+
+#### 8. Loading datapacks
 
 To load datapacks, ordinarily you'd have to manually place the file into your worlds `datapacks` folder, and it would not persist between worlds. However, in a modded environment, there are mods such as [Open Loader](https://www.curseforge.com/minecraft/mc-mods/open-loader) and [Paxi](https://www.curseforge.com/minecraft/mc-mods/paxi) that automatically load datapacks placed in their config folder, or in other directories such as the `<root>/datapacks` directory that many launchers support. Additionally, KubeJS can act as a datapack loader, with `<root>/kubejs/data/...` loading data files put in it. Data loaded through KubeJS will have higher priority than ones loaded through Open Loader or Paxi.
 
