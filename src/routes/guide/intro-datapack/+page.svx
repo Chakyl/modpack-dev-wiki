@@ -159,12 +159,10 @@ Once you've created the datapack, you can zip/compress it to make it easier to s
 
 <img src={DatapackZip} alt="Zipping a datapack" />
 
-#### 8. Loading datapacks
-
+#### 8. Loading the datapack
 To load datapacks, ordinarily you'd have to manually place the file into your worlds `datapacks` folder, and it would not persist between worlds. However, in a modded environment, there are mods such as [Open Loader](https://www.curseforge.com/minecraft/mc-mods/open-loader) and [Paxi](https://www.curseforge.com/minecraft/mc-mods/paxi) that automatically load datapacks placed in their config folder, or in other directories such as the `<root>/datapacks` directory that many launchers support. Additionally, KubeJS can act as a datapack loader, with `<root>/kubejs/data/...` loading data files put in it. Data loaded through KubeJS will have higher priority than ones loaded through Open Loader or Paxi.
 
 ## Related topics:
 
-- Neo/Forge data conditions
+- [Neo/Forge data conditions](https://chakyl.github.io/modpack-dev-wiki/wiki/info/neoforge-data-conditions)
 - [Mcmeta filters](https://chakyl.github.io/modpack-dev-wiki/wiki/info/mcmeta-filtering)
-
