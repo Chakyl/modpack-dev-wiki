@@ -1,8 +1,7 @@
 ---
-title: 
+title: Intro to Datapacks
 tags: intro
-description:
-    placeholder
+description: placeholder
 ---
 
 <script lang="ts">
