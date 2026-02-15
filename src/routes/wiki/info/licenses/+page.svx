@@ -26,7 +26,7 @@ No matter what a project's license says, if it is hosted on a platform such as C
 
 :::warning
 
-The following are simply overviews of common licenses, and is not legal advice! It is recommended that you familiarize yourself with licenses that you choose to interact with, whether it be using a project or making one yourself. If you're ever unsure on what you can/can't do with someone's work, try to reach out to them to make sure what you're doing is legal!
+I am not a lawyer, the following are simply overviews of common licenses, and is not legal advice! If you're ever unsure on what you can/can't do with someone's work, either consult an attorney or reach out to the author to get explicit permission to do what you want.
 
 :::
 ## Common Licenses
