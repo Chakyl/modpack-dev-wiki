@@ -1,5 +1,5 @@
 ---
-title: Licenses (WIP)
+title: Licenses
 tags: todo
 description: An overview of common licenses, what they mean, and which one is right for you
 ---
@@ -17,15 +17,56 @@ Licenses are ways for developers to define what others can or cannot do with the
 
 :::info
 
-No matter what a project's license says, if it is hosted on a platform such as Curseforge or Modrinth, you are free to include it in a modpack as long as it is hosted on the same platform. 
+No matter what a project's license says, if it is hosted on a platform such as Curseforge or Modrinth, you are free to include it in a modpack as long as it is hosted on the same platform. Both CurseForge and Modrinth have clauses that prevent project developers from restricting access to users using their content on their platforms.
+
+[CurseForge clause](https://legal.overwolf.com/docs/curseforge/mod-authors-terms/#:~:text=You%20grant%20Overwolf%20an%20unrestricted%2C,ensuring%20compliance%20with%20these%20Terms.)
+[Modrinth clause](https://modrinth.com/legal/terms#:~:text=When%20you%20upload%20your%20Gaming%20Content%2C%20you%20hereby%20grant%20us%20a%20limited%20use%2C%20non%2Dexclusive%2C%20royalty%2Dfree%2C%20fully%20paid%20up%2C%20right%20to%20display%20and%20distribute%20your%20Gaming%20Content%20to%20our%20users%20through%20the%20Service%2C%20which%20our%20users%20in%20turn%20may%20then%20use%20at%20their%20sole%20discretion.)
 
 :::
 
+:::warning
+
+The following are simply overviews of common licenses, and is not legal advice! It is recommended that you familiarize yourself with licenses that you choose to interact with, whether it be using a project or making one yourself. If you're ever unsure on what you can/can't do with someone's work, try to reach out to them to make sure what you're doing is legal!
+
+:::
 ## Common Licenses
 
-MIT
+#### [MIT](https://opensource.org/license/mit)
 
-All Rights Reserved / ARR
+- Author waives most rights
+- Users are free to do anything they'd like, as long as credit to the original author is provided
 
-LGPL
+#### [Public Domain](https://creativecommons.org/public-domain/)
+
+- Author waives all rights
+- Users are free to do anything they'd like, no credit or attribution required
+
+#### All Rights Reserved / ARR
+
+- Author keeps ALL rights
+- Users are not permitted to use the project in any way
+- Projects without licenses should be treated as All Rights Reserved
+- Ask the author before doing anything with the project!
+
+#### [GNU GPL](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+- "Viral License" - derivatives of this project must use the same license as the original
+	- If this software or parts of this software is used in a larger project, the entire project must be GNU GPL Licensed
+- Users are free to do anything they'd like, as long as credit to original author is provided and project derivative is GNU GPL licensed
+
+#### [LGPL](https://www.gnu.org/licenses/lgpl-3.0.en.html)
+
+- "Viral License" - derivatives of this project must use the same license as the original
+	- If this software or parts of this software is used in a larger project, the project as a whole does not have to be LGPL Licensed
+- Users are free to do anything they'd like, as long as credit to original author is provided and the original LGPL licensed work is still LGPL licensed in the project derivative
+
+
+:::info
+
+Note about inventing your own licenses and how to not make a clown out of yourself
+
+:::
+## Why Open Source is good and pawesome
+
+lorem ipsum dolor
 
