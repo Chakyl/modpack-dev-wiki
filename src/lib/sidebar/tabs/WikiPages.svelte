@@ -43,6 +43,7 @@
 <SidebarCategory name="Info" icon={IconInfo}>
   <SidebarPage label="Free Multiplayer" icon={IconBraces} page="/wiki/info/free-multiplayer" />
   <SidebarPage label="mcmeta Filtering" icon={IconBraces} page="/wiki/info/mcmeta-filtering" />
+  <SidebarPage label="Licenses" icon={IconBraces} page="/wiki/info/licenses" />
 </SidebarCategory>
 
 <SidebarCategory name="Creative" icon={IconConcepts}>
