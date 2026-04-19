@@ -13,7 +13,7 @@ import { Discord } from '$lib/reusables';
 
 ## Mod options
 
-There are many mods that allow for free multiplayer across different loaders and versions. We've compiled a list of them in our [Useful Mods List ](https://modpack-dev-knowledgebase.github.io/modpack-dev-wiki/wiki/useful-mods/)under the "Multiplayer" section. These are by far the easiest methods for free multiplayer, as they require little setup or technical knowledge. The main drawback is that the server is hosted through the owner's machine, so if they go offline, the whole server does as well.
+There are many mods that allow for free multiplayer across different loaders and versions. We've compiled a list of them in our [Useful Mods List ](https://modpack-dev-knowledgebase.github.io/modpack-dev-wiki/wiki/useful-mods/) under the "Multiplayer" section. These are by far the easiest methods for free multiplayer, as they require little setup or technical knowledge. The main drawback is that the server is hosted through the owner's machine, so if they go offline, the whole server does as well.
 ## Oracle Free Tier
 
 [Oracle Free Tier](https://www.oracle.com/cloud/free/) is a service offered by the Oracle corporation to offer free 24GB servers to users who apply. The catch is that it's more time and effort to set up and maintain than any of the mods shown here, since you'd be setting up an unmanaged Linux server to play Minecraft from scratch. However, some [online guides](https://blogs.oracle.com/developers/how-to-setup-and-run-a-free-minecraft-server-in-the-cloud) do exist to aid through the process.
