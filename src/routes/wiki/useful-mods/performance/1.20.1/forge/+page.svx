@@ -34,7 +34,6 @@ These mods directly improve modpack performance through code optimizations.
 | Flerovium | [CF](https://www.curseforge.com/minecraft/mc-mods/flerovium) / [MR](https://modrinth.com/mod/flerovium) | Greatly improve your fps with virtually no side-effects on graphics quality | - |
 | FTB Quests Freeze Fix | [CF](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-freeze-fix) / [MR](https://modrinth.com/mod/ftb-quests-freeze-fix) | Caches the FTB Quests menu on startup to prevent freezing in game | - |
 | Gnetum | [CF](https://www.curseforge.com/minecraft/mc-mods/gnetum) / [MR](https://modrinth.com/mod/gnetum) | Distribute HUD updates over multiple frames to improve performance | - |
-| Gnetum | [CF](https://www.curseforge.com/minecraft/mc-mods/gnetum) / [MR](https://modrinth.com/mod/gnetum) | Distribute HUD updates over multiple frames to improve performance | - |
 | ImmediatelyFast | [CF](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast) / [MR](https://modrinth.com/mod/immediatelyfast) | Speed up immediate mode rendering in Minecraft | - |
 | Ixeris | [CF](https://www.curseforge.com/minecraft/mc-mods/ixeris) / [MR](https://modrinth.com/mod/ixeris) | Buffered raw input and threaded event polling | - |
 | ModernFix* | [CF](https://www.curseforge.com/minecraft/mc-mods/modernfix) / [MR](https://modrinth.com/mod/modernfix) | All-in-one mod that improves performance, reduces memory usage, and fixes many bugs | - |

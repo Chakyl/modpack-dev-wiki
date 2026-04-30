@@ -30,6 +30,7 @@ These mods directly improve modpack performance through code optimizations.
 | FastSuite | [CF](https://www.curseforge.com/minecraft/mc-mods/fastsuite) | A performance upgrade for the JSON recipe system | [Recipe Essentials](https://www.curseforge.com/minecraft/mc-mods/recipe-essentials-forge-fabric) |
 | Ferritecore* | [CF](https://www.curseforge.com/minecraft/mc-mods/ferritecore) / [MR](https://modrinth.com/mod/ferrite-core) | Memory usage optimizations | - |
 | Flerovium | [CF](https://www.curseforge.com/minecraft/mc-mods/flerovium) / [MR](https://modrinth.com/mod/flerovium) | Greatly improve your fps with virtually no side-effects on graphics quality | - |
+| Gnetum | [CF](https://www.curseforge.com/minecraft/mc-mods/gnetum) / [MR](https://modrinth.com/mod/gnetum) | Distribute HUD updates over multiple frames to improve performance | - |
 | ImmediatelyFast | [CF](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast) / [MR](https://modrinth.com/mod/immediatelyfast) | Speed up immediate mode rendering in Minecraft | - |
 | Ixeris | [CF](https://www.curseforge.com/minecraft/mc-mods/ixeris) / [MR](https://modrinth.com/mod/ixeris) | Buffered raw input and threaded event polling | - |
 | Lithium* | [CF](https://www.curseforge.com/minecraft/mc-mods/lithium) / [MR](https://modrinth.com/mod/lithium) | General-purpose serverside optimization mod | [Radium](https://www.curseforge.com/minecraft/mc-mods/radium-reforged) on relevant versions |
