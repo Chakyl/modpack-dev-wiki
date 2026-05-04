@@ -6,12 +6,16 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { parseArgs } from 'node:util';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DATA_PATH = path.join(__dirname, "useful_mods.json");
 const OUTPUT_DIR = path.join(path.join(__dirname, '..'), "src/routes/wiki/useful-mods");
+
+const DESIRED_LOADERS = ["fabric", "forge", "neoforge"];
+const DESIRED_VERSIONS = ["1.19.2", "1.20.1", "1.21.1", "26.1"];
 
 const data = JSON.parse(fs.readFileSync(DATA_PATH, "utf-8"));
 const mods = data.mods;
@@ -31,6 +35,7 @@ function formatLoader(loader) {
   }
   return `BAD LOADER!! ${loader} DOESN'T EXIST!!`
 }
+
 function formatCategory(category) {
   switch (category) {
     case "performance": return "Performance";
@@ -54,6 +59,7 @@ function getTableDescriptor(category) {
   }
   return `BAD CATEGORY!! ${category} DOESN'T EXIST!!`
 }
+
 function getFrontMatter(key) {
   let splitKey = key.split("/")
   let category = splitKey[0];
@@ -82,6 +88,7 @@ Manual edits to this file will be overritten on next script run.
 ${getTableDescriptor(category)}\n\n
 `
 }
+
 function writeFile(newPath, contents, cb) {
   fs.mkdir(path.dirname(newPath), { recursive: true }, function (err) {
     if (err) return cb(err);
@@ -89,6 +96,7 @@ function writeFile(newPath, contents, cb) {
     fs.writeFile(newPath, contents, cb);
   });
 }
+
 function buildTable(modList) {
   const sorted = [...modList].sort((a, b) =>
     a.display_name.localeCompare(b.display_name)
@@ -105,9 +113,180 @@ function buildTable(modList) {
   return `${header}\n${rows}`;
 }
 
+async function getVersionInfoFromModrinth(url) {
+  const mrUrl = new URL(url);
+  const slug = mrUrl.pathname.split('/').filter(Boolean).pop();
+
+  let out = null;
+  try {
+    const response = await fetch(`https://api.modrinth.com/v2/project/${encodeURIComponent(slug)}`);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    if (result.game_versions != null && result.loaders != null) {
+      out = {
+        loaders: result.loaders,
+        versions: result.game_versions
+      };
+    }
+  } catch (error) {
+    console.log(`Failed to get info from Modrinth for url: ${url}\n\terror: ${error.message}`);
+  }
+
+  return out;
+}
+
+// Used to lookup the modloadertype number for curseforge: https://docs.curseforge.com/rest-api/?javascript#tocS_ModLoaderType
+const LOADER_CURSEFORGE_TYPE_MAP = ["any", "forge", "cauldron", "liteloader", "fabric", "quilt", "neoforge"];
+let CF_API_KEY = "";
+
+async function getVersionInfoFromCurseforge(url) {
+  const cfUrl = new URL(url);
+  const slug = cfUrl.pathname.split('/').filter(Boolean).pop();
+
+  let out = null;
+  try {
+    // For Curseforge we must search for the mod via slug to get it's Id to use to get version/loader info.
+    const response = await fetch(`https://api.curseforge.com/v1/mods/search?gameId=432&slug=${encodeURIComponent(slug)}`, {
+      method: "GET",
+      headers: {
+        'Accept':'application/json',
+        'x-api-key':CF_API_KEY
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    const mod = result.data?.find(m => m.slug === slug);
+
+    if (mod == null) {
+      throw new Error(`Could not find mod with slug: ${slug}`);
+    }
+
+    // Afterwards it's easiest to search for a file of a certain version/loader to confirm the mod supports it.
+    let versionsToSearch = [...DESIRED_VERSIONS];
+    let loadersToSearch = [...DESIRED_LOADERS];
+
+    let versionsFound = new Set();
+    let loadersFound = new Set();
+
+    while (versionsToSearch.length != 0) {
+      const version = versionsToSearch.pop();
+      const response = await fetch(`https://api.curseforge.com/v1/mods/${mod.id}/files?gameVersion=${version}`, {
+        method: "GET",
+        headers: {
+          'Accept':'application/json',
+          'x-api-key':CF_API_KEY
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      if (result.data.length > 0) {
+        versionsFound.add(version);
+      }
+    }
+
+    while (loadersToSearch.length != 0) {
+      const loader = loadersToSearch.pop();
+      const loaderTypeNum = LOADER_CURSEFORGE_TYPE_MAP.indexOf(loader);
+      const response = await fetch(`https://api.curseforge.com/v1/mods/${mod.id}/files?modLoaderType=${loaderTypeNum}`, {
+        method: "GET",
+        headers: {
+          'Accept':'application/json',
+          'x-api-key':CF_API_KEY
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      if (result.data.length > 0) {
+        loadersFound.add(loader);
+      }
+    }
+
+    out = {
+      loaders: [...loadersFound],
+      versions: [...versionsFound]
+    };
+  } catch (error) {
+    console.log(`Failed to get info from Curseforge for url: ${url}\n\terror: ${error.message}`);
+  }
+
+  return out;
+}
+
+async function updateModVersion(mod) {
+  // always try hitting modrinth first even if we don't have a link and need to guess the slug via a curseforge link
+  const mrUrl = mod.link.modrinth ? mod.link.modrinth : mod.link.curseforge;
+  let info = await getVersionInfoFromModrinth(mrUrl);
+  if (info == null) {
+    console.log(`\tModrinth failed trying Curseforge instead... ${mod.link.curseforge}`)
+    info = await getVersionInfoFromCurseforge(mod.link.curseforge);
+  }
+
+  if (info != null) {
+    mod.versions = [...new Set([...mod.versions, ...info.versions])].sort().filter(v => DESIRED_VERSIONS.includes(v));
+    mod.loaders = [...new Set([...mod.loaders, ...info.loaders])].sort().filter(v => DESIRED_LOADERS.includes(v));
+  }
+}
+
+///////////////////
+// PROCESS START //
+///////////////////
+
+// Cmd line options
+const options = {
+  // dry run option
+  dryrun: {
+    type: 'boolean',
+    short: 'd',
+  },
+  // pings modrinth and/or curseforge to confirm and write back supported versions/loaders for each mod
+  updateversions: { 
+    type: 'boolean',
+    short: 'u',
+  },
+  // provide curseforge API key to be able to ping their servers for info
+  curseforgekey: {
+    type: 'string',
+    short: 'c',
+  },
+};
+
+// Parse additional args
+let args;
+try {
+  ({ values: args } = parseArgs({ 
+    args: process.argv.slice(2), 
+    options 
+  }));
+} catch (err) {
+  console.error('Argument Error:', err.message);
+  process.exit(1);
+}
+
+if (args.curseforgekey) {
+  CF_API_KEY = args.curseforgekey;
+}
+
 const grouped = {};
 
 for (const mod of mods) {
+  if (args.updateversions) {
+    await updateModVersion(mod);
+  }
   for (const category of mod.categories) {
     for (const version of mod.versions) {
       for (const loader of mod.loaders) {
@@ -119,7 +298,16 @@ for (const mod of mods) {
   }
 }
 
+// Write back to useful_mods.json
+if (!args.dryrun && args.updateversions) {
+  fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, "    "), "utf-8");
+}
+
 console.log("Grouped keys:", Object.keys(grouped));
+if (args.dryrun) {
+  process.exit(0);
+}
+
 const footer = `\n\n\\* - A must-have mod for nearly any modpack. Only in very rare circumstances should you not use this mod or an equivalent.
 
 \** - Prone to issues or conflicts with other mods`
@@ -145,4 +333,3 @@ for (const key in grouped) {
     console.error('Update failed:', err.message);
   }
 }
-

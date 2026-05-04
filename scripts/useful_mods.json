@@ -14,14 +14,15 @@
                 "profiling"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
             ],
             "loaders": [
+                "fabric",
                 "forge",
-                "neoforge",
-                "fabric"
+                "neoforge"
             ]
         },
         {
@@ -35,13 +36,15 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
-                "1.21.1"
+                "1.21.1",
+                "26.1"
             ],
             "loaders": [
+                "fabric",
                 "forge",
-                "neoforge",
-                "fabric"
+                "neoforge"
             ]
         },
         {
@@ -55,13 +58,15 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
-                "1.21.1"
+                "1.21.1",
+                "26.1"
             ],
             "loaders": [
+                "fabric",
                 "forge",
-                "neoforge",
-                "fabric"
+                "neoforge"
             ]
         },
         {
@@ -76,13 +81,15 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
-                "1.21.1"
+                "1.21.1",
+                "26.1"
             ],
             "loaders": [
+                "fabric",
                 "forge",
-                "neoforge",
-                "fabric"
+                "neoforge"
             ]
         },
         {
@@ -96,6 +103,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1"
             ],
             "loaders": [
@@ -114,10 +122,14 @@
                 "performance"
             ],
             "versions": [
-                "1.20.1"
+                "1.19.2",
+                "1.20.1",
+                "1.21.1"
             ],
             "loaders": [
-                "forge"
+                "fabric",
+                "forge",
+                "neoforge"
             ]
         },
         {
@@ -130,6 +142,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -149,6 +162,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -168,14 +182,15 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
             ],
             "loaders": [
+                "fabric",
                 "forge",
-                "neoforge",
-                "fabric"
+                "neoforge"
             ]
         },
         {
@@ -229,6 +244,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -250,6 +266,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -291,6 +308,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -312,14 +330,15 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
             ],
             "loaders": [
                 "fabric",
-                "neoforge",
-                "forge"
+                "forge",
+                "neoforge"
             ]
         },
         {
@@ -332,6 +351,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -393,6 +413,7 @@
                 "bug_fixes"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -414,6 +435,7 @@
                 "bug_fixes"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -434,13 +456,14 @@
                 "bug_fixes"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
             ],
             "loaders": [
-                "forge",
                 "fabric",
+                "forge",
                 "neoforge"
             ]
         },
@@ -456,8 +479,10 @@
                 "bug_fixes"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
-                "1.21.1"
+                "1.21.1",
+                "26.1"
             ],
             "loaders": [
                 "fabric",
@@ -514,14 +539,15 @@
                 "bug_fixes"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
             ],
             "loaders": [
                 "fabric",
-                "neoforge",
-                "forge"
+                "forge",
+                "neoforge"
             ]
         },
         {
@@ -535,6 +561,7 @@
                 "profiling"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -556,13 +583,14 @@
                 "profiling"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
             "loaders": [
+                "fabric",
                 "forge",
-                "neoforge",
-                "fabric"
+                "neoforge"
             ]
         },
         {
@@ -597,6 +625,7 @@
                 "profiling"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -618,6 +647,7 @@
                 "profiling"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -637,6 +667,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -656,12 +687,15 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
             ],
             "loaders": [
-                "fabric"
+                "fabric",
+                "forge",
+                "neoforge"
             ]
         },
         {
@@ -695,6 +729,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -714,6 +749,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -734,6 +770,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -755,6 +792,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1"
             ],
             "loaders": [
@@ -772,6 +810,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -790,6 +829,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -810,12 +850,13 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
             "loaders": [
-                "forge",
                 "fabric",
+                "forge",
                 "neoforge"
             ]
         },
@@ -836,8 +877,8 @@
             ],
             "loaders": [
                 "fabric",
-                "neoforge",
-                "forge"
+                "forge",
+                "neoforge"
             ]
         },
         {
@@ -851,10 +892,13 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
-                "1.21.1"
+                "1.21.1",
+                "26.1"
             ],
             "loaders": [
+                "fabric",
                 "forge",
                 "neoforge"
             ]
@@ -909,6 +953,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -1005,7 +1050,7 @@
                 "neoforge"
             ]
         },
-                {
+        {
             "display_name": "Structurify",
             "link": {
                 "curseforge": "https://www.curseforge.com/minecraft/mc-mods/structurify",
@@ -1036,6 +1081,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1"
             ],
             "loaders": [
@@ -1052,6 +1098,7 @@
                 "documentation"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -1070,6 +1117,7 @@
                 "documentation"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -1127,10 +1175,12 @@
                 "documentation"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
             "loaders": [
+                "fabric",
                 "forge",
                 "neoforge"
             ]
@@ -1146,6 +1196,7 @@
                 "documentation"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -1166,6 +1217,7 @@
                 "multiplayer"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -1188,6 +1240,7 @@
                 "multiplayer"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -1210,6 +1263,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -1231,6 +1285,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -1251,13 +1306,15 @@
                 "utility"
             ],
             "versions": [
-                "1.20.1"
+                "1.20.1",
+                "1.21.1"
             ],
             "loaders": [
-                "forge"
+                "forge",
+                "neoforge"
             ]
         },
-                {
+        {
             "display_name": "Domix's Guidebook",
             "link": {
                 "curseforge": "https://www.curseforge.com/minecraft/mc-mods/domixs-guidebook",
@@ -1274,7 +1331,7 @@
                 "fabric"
             ]
         },
-                {
+        {
             "display_name": "Bobby",
             "link": {
                 "curseforge": "https://www.curseforge.com/minecraft/mc-mods/bobby",
@@ -1285,6 +1342,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
@@ -1304,10 +1362,12 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.21.1"
             ],
             "loaders": [
                 "fabric",
+                "forge",
                 "neoforge"
             ]
         },
@@ -1356,14 +1416,15 @@
                 "documentation"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
             ],
             "loaders": [
                 "fabric",
-                "neoforge",
-                "forge"
+                "forge",
+                "neoforge"
             ]
         },
         {
@@ -1377,6 +1438,7 @@
                 "performance"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -1395,9 +1457,11 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.21.1"
             ],
             "loaders": [
+                "forge",
                 "neoforge"
             ]
         },
@@ -1412,6 +1476,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -1432,6 +1497,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -1451,6 +1517,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
@@ -1492,6 +1559,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1",
                 "26.1"
