@@ -28,6 +28,7 @@ These mods directly improve modpack performance through code optimizations.
 | C2ME** | [MR](https://modrinth.com/mod/c2me-fabric) | Allows chunkloading to be multithreaded, increasing worldgen speeds. Has frequent issues with mods that touch worldgen or threading | - |
 | Connectivity | [CF](https://www.curseforge.com/minecraft/mc-mods/connectivity) | Fix Login timeouts, Packet sizes errors, Payloads errors, ghostblocks and more | [Packet Fixer](https://www.curseforge.com/minecraft/mc-mods/packet-fixer) |
 | Dynamic FPS | [CF](https://www.curseforge.com/minecraft/mc-mods/dynamic-fps) / [MR](https://modrinth.com/mod/dynamic-fps) | Improve performance when Minecraft is in the background | [FPS Reducer](https://www.curseforge.com/minecraft/mc-mods/fps-reducer) |
+| Embeddium* | [CF](https://www.curseforge.com/minecraft/mc-mods/embeddium) / [MR](https://modrinth.com/mod/embeddium) | Rendering optimizations | [Xenon](https://www.curseforge.com/minecraft/mc-mods/xenon) and [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium) for relevant versions |
 | Fast Noise | [CF](https://www.curseforge.com/minecraft/mc-mods/zfastnoise) / [MR](https://modrinth.com/mod/zfastnoise) | Optimizes worldgen speeds | - |
 | Ferritecore* | [CF](https://www.curseforge.com/minecraft/mc-mods/ferritecore) / [MR](https://modrinth.com/mod/ferrite-core) | Memory usage optimizations | - |
 | Gnetum | [CF](https://www.curseforge.com/minecraft/mc-mods/gnetum) / [MR](https://modrinth.com/mod/gnetum) | Distribute HUD updates over multiple frames to improve performance | - |

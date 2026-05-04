@@ -1,7 +1,7 @@
 ---
-title: Documentation mods for Fabric 1.20.1
-tags: mods, Fabric, 1.20.1
-description: Documentation mods for Fabric 1.20.1
+title: Documentation mods for Fabric 1.19.2
+tags: mods, Fabric, 1.19.2
+description: Documentation mods for Fabric 1.19.2
 ---
 
 <script lang="ts">
@@ -16,7 +16,7 @@ https://github.com/Modpack-Dev-Knowledgebase/modpack-dev-wiki/blob/main/scripts/
 Manual edits to this file will be overritten on next script run.
 -->
 
-# Documentation mods for Fabric 1.20.1
+# Documentation mods for Fabric 1.19.2
 
 These mods help provide information to the player and guide them through content in the modpack.
 

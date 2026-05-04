@@ -1,7 +1,7 @@
 ---
-title: Bug Fixes mods for Forge 26.1
-tags: mods, Forge, 26.1
-description: Bug Fixes mods for Forge 26.1
+title: Bug Fixes mods for Forge 1.19.2
+tags: mods, Forge, 1.19.2
+description: Bug Fixes mods for Forge 1.19.2
 ---
 
 <script lang="ts">
@@ -16,7 +16,7 @@ https://github.com/Modpack-Dev-Knowledgebase/modpack-dev-wiki/blob/main/scripts/
 Manual edits to this file will be overritten on next script run.
 -->
 
-# Bug Fixes mods for Forge 26.1
+# Bug Fixes mods for Forge 1.19.2
 
 These mods fix bugs present in Vanilla Minecraft, other mods, or in loaders.
 
@@ -24,6 +24,7 @@ These mods fix bugs present in Vanilla Minecraft, other mods, or in loaders.
 | Name | Links | Description | Alternatives |
 |------|-------|-------------| --------------|
 | AttributeFix | [CF](https://www.curseforge.com/minecraft/mc-mods/attributefix) / [MR](https://modrinth.com/mod/attributefix) | Removes arbitrary limits on Minecraft's attribute system. Uable to modify the base attributes of players/mobs, only change the caps. For that functionality, check out our guide [here.](https://modpack-dev-knowledgebase.github.io/modpack-dev-wiki/guide/custom-content/attribute-modification/) | - |
+| Load My Fucking Tags | [CF](https://www.curseforge.com/minecraft/mc-mods/lmft) / [MR](https://modrinth.com/mod/lmft) | Prevents Incorrect Tag Entries from breaking an entire Tag | - |
 | Max Health Fix | [CF](https://www.curseforge.com/minecraft/mc-mods/max-health-fix) / [MR](https://modrinth.com/mod/max-health-fix) | Fixes an old bug in Minecraft that causes the "Max Health" attribute to be ignored when a player joins the game. | - |
 | ModernFix* | [CF](https://www.curseforge.com/minecraft/mc-mods/modernfix) / [MR](https://modrinth.com/mod/modernfix) | All-in-one mod that improves performance, reduces memory usage, and fixes many bugs | - |
 | Simple Snowy Fix | [CF](https://www.curseforge.com/minecraft/mc-mods/simple-snowy-fix-forge-fabric) / [MR](https://modrinth.com/mod/simple-snowy-fix-(forge-fabric)) | Fixes incorrect snow generation on tree leaves | - |
