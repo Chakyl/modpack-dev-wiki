@@ -231,7 +231,7 @@ async function updateModVersion(mod) {
   // always try hitting modrinth first even if we don't have a link and need to guess the slug via a curseforge link
   const mrUrl = mod.link.modrinth ? mod.link.modrinth : mod.link.curseforge;
   let info = await getVersionInfoFromModrinth(mrUrl);
-  if (info == null) {
+  if (info == null && CF_API_KEY != "") {
     console.log(`\tModrinth failed trying Curseforge instead... ${mod.link.curseforge}`)
     info = await getVersionInfoFromCurseforge(mod.link.curseforge);
   }
@@ -279,6 +279,8 @@ try {
 
 if (args.curseforgekey) {
   CF_API_KEY = args.curseforgekey;
+} else if (args.updateversions) {
+  console.log(`No Curseforge API key provided, will only check using Modrinth`);
 }
 
 const grouped = {};
