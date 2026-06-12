@@ -1569,6 +1569,25 @@
                 "forge",
                 "neoforge"
             ]
+        },
+                {
+            "display_name": "Defaulted",
+            "link": {
+                "curseforge": "https://www.curseforge.com/minecraft/mc-mods/defaulted",
+                "modrinth": "https://modrinth.com/mod/defaulted"
+            },
+            "description": "Adds registry to control default item components.",
+            "categories": [
+                "utility"
+            ],
+            "versions": [
+                "1.21.1",
+                "26.1"
+            ],
+            "loaders": [
+                "fabric",
+                "neoforge"
+            ]
         }
     ]
 }
