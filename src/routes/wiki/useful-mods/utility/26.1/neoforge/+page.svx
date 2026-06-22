@@ -25,6 +25,7 @@ These are mods that are essential for creating, removing, and editing aspects of
 |------|-------|-------------| --------------|
 | Defaulted | [CF](https://www.curseforge.com/minecraft/mc-mods/defaulted) / [MR](https://modrinth.com/mod/defaulted) | Adds registry to control default item components. | - |
 | FancyMenu | [CF](https://www.curseforge.com/minecraft/mc-mods/fancymenu) / [MR](https://modrinth.com/mod/fancymenu) | Customize Minecraft menus in an in-game GUI editor | [PackMenu](https://www.curseforge.com/minecraft/mc-mods/packmenu) for Neo/Forge |
+| Featurify | [CF](https://www.curseforge.com/minecraft/mc-mods/featurify) / [MR](https://modrinth.com/mod/featurify) | A worldgen feature configuration mod that eliminates the need for datapacks. Add, remove, and tweak features in any biome. | - |
 | JSON Things | [CF](https://www.curseforge.com/minecraft/mc-mods/json-things) | A mod that enables players to define blocks and items (and more!) via thingpacks, zip files similar to datapacks and resource packs | - |
 | Lithostitched | [CF](https://www.curseforge.com/minecraft/mc-mods/lithostitched) / [MR](https://modrinth.com/mod/lithostitched) | Library mod with new configurability and compatibility enhancements for worldgen | - |
 | Lychee | [CF](https://www.curseforge.com/minecraft/mc-mods/lychee) / [MR](https://modrinth.com/mod/lychee) | Define in-world crafting & interactions using JSON recipes, such as item interaction, burning, touching fluid, anvil, crushing, lightning, and exploding. | - |

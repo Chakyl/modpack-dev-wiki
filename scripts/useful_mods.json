@@ -1570,7 +1570,7 @@
                 "neoforge"
             ]
         },
-                {
+        {
             "display_name": "Defaulted",
             "link": {
                 "curseforge": "https://www.curseforge.com/minecraft/mc-mods/defaulted",
@@ -1587,6 +1587,27 @@
             "loaders": [
                 "fabric",
                 "neoforge"
+            ]
+        },
+        {
+            "display_name": "Featurify",
+            "link": {
+                "curseforge": "https://www.curseforge.com/minecraft/mc-mods/featurify",
+                "modrinth": "https://modrinth.com/mod/featurify"
+            },
+            "description": "A worldgen feature configuration mod that eliminates the need for datapacks. Add, remove, and tweak features in any biome.",
+            "categories": [
+                "utility"
+            ],
+            "versions": [
+                "1.20.1",
+                "1.21.1",
+                "26.1"
+            ],
+            "loaders": [
+                "fabric",
+                "neoforge",
+                "forge"
             ]
         }
     ]
