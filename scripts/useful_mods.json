@@ -1631,6 +1631,106 @@
                 "forge",
                 "neoforge"
             ]
+        },
+        {
+            "display_name": "Mixin Helper",
+            "link": {
+                "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mixin-helper",
+                "modrinth": "https://modrinth.com/mod/mixin-helper"
+            },
+            "description": "Utility mod for modpack developers that provides complete control over mixin behavior",
+            "categories": [
+                "utility"
+            ],
+            "versions": [
+                "1.20.1",
+                "1.21.1"
+            ],
+            "loaders": [
+                "fabric",
+                "forge",
+                "neoforge"
+            ]
+        },
+        {
+            "display_name": "RunicLib",
+            "link": {
+                "curseforge": "https://www.curseforge.com/minecraft/mc-mods/runiclib",
+                "modrinth": "https://modrinth.com/mod/runiclib"
+            },
+            "description": "Adds many unique attributes and effects for modpack developers to use",
+            "categories": [
+                "utility"
+            ],
+            "versions": [
+                "1.20.1",
+                "1.21.1"
+            ],
+            "loaders": [
+                "fabric",
+                "forge",
+                "neoforge"
+            ]
+        },
+        {
+            "display_name": "Additional Attributes",
+            "link": {
+                "curseforge": "https://www.curseforge.com/minecraft/mc-mods/additional-attributes",
+                "modrinth": "https://modrinth.com/mod/additional-attributes"
+            },
+            "description": "Provides attributes for modpack developers to use, and has additional compatibility with Iron's Spells and Apotheosis",
+            "categories": [
+                "utility"
+            ],
+            "versions": [
+                "1.20.1",
+                "1.21.1"
+            ],
+            "loaders": [
+                "forge",
+                "neoforge"
+            ]
+        },
+        {
+            "display_name": "Additional Entity Attributes",
+            "link": {
+                "modrinth": "https://modrinth.com/mod/additionalentityattributes"
+            },
+            "description": "Adds various attributes relating to entities, notably Size and Scale attributes",
+            "categories": [
+                "utility"
+            ],
+            "versions": [
+                "1.19.2",
+                "1.20.1",
+                "1.21.1",
+                "26.1"
+            ],
+            "loaders": [
+                "fabric",
+                "forge",
+                "neoforge"
+            ]
+        },
+        {
+            "display_name": "Apothic Attributes",
+            "link": {
+                "curseforge": "https://www.curseforge.com/minecraft/mc-mods/apothic-attributes",
+                "modrinth": "https://modrinth.com/mod/apothic-attributes"
+            },
+            "description": "Adds various attributes to the game, a GUI to view player attributes, and a config for the vanilla damage formula.",
+            "categories": [
+                "utility"
+            ],
+            "versions": [
+                "1.20.1",
+                "1.21.1",
+                "26.1"
+            ],
+            "loaders": [
+                "forge",
+                "neoforge"
+            ]
         }
     ]
 }
