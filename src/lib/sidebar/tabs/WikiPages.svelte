@@ -26,7 +26,7 @@
   import IconGitMerge from "~icons/tabler/git-merge";
   import IconVocabulary from "~icons/tabler/vocabulary";
   import IconEvergreen from "~icons/tabler/christmas-tree";
-  import IconGear from "~icons/tabler/icon-settings"
+  import IconGear from "~icons/tabler/settings"
 </script>
 
 <!-- ADD PAGES AND CATEGORIES BELOW -->
