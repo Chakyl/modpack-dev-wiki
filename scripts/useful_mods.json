@@ -1731,6 +1731,24 @@
                 "forge",
                 "neoforge"
             ]
+        },
+        {
+            "display_name": "Packdev Toolkit",
+            "link": {
+                "curseforge": "https://www.curseforge.com/minecraft/mc-mods/packdev-toolkit",
+                "modrinth": "https://modrinth.com/mod/packdev-toolkit"
+            },
+            "description": "A collection of developer tools for building modpacks and datapacks.",
+            "categories": [
+                "utility"
+            ],
+            "versions": [
+                "1.21.1"
+            ],
+            "loaders": [
+                "fabric",
+                "neoforge"
+            ]
         }
     ]
 }
