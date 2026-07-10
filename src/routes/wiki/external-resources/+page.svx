@@ -24,3 +24,4 @@ import { Discord } from '$lib/reusables';
 | Custom Worldgen tutorials                               | https://www.youtube.com/@colebot                                                                     |
 | Modding Tutorials                                       | https://www.youtube.com/@ModdingByKaupenjoe<br>https://www.youtube.com/@thementorcodelab             |
 | KubeJS Tutorials                                        | https://www.youtube.com/@kctops6                                                                     |
+| Moddex                                                  | https://moddex.gg                                                                                    |
