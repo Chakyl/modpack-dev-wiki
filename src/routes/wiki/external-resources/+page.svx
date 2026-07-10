@@ -1,6 +1,7 @@
 ---
 title: External Resources
 tags:
+  - External-Resources
 description: List of outside resources potentially useful for modpack development
 ---
 
