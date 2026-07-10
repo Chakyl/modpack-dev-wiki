@@ -26,6 +26,7 @@
   import IconGitMerge from "~icons/tabler/git-merge";
   import IconVocabulary from "~icons/tabler/vocabulary";
   import IconEvergreen from "~icons/tabler/christmas-tree";
+  import IconGear from "~icons/tabler/icon-settings"
 </script>
 
 <!-- ADD PAGES AND CATEGORIES BELOW -->
@@ -67,3 +68,4 @@
 
 <SidebarPage label="Useful Mods" icon={IconHomeStar} page="/wiki/useful-mods" />
 <SidebarPage label="Evergreen Resources" icon={IconEvergreen} page="/wiki/evergreen" />
+<SidebarPage label="External Resources" icon={IconGear} page="/wiki/external-resources" />

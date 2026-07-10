@@ -1,0 +1,26 @@
+---
+title: External Resources
+tags:
+description: List of outside resources potentially useful for modpack development
+---
+
+<script lang="ts">
+import { Discord } from '$lib/reusables';
+</script>
+
+# External Resources
+
+
+| Resource                                                | Links                                                                                                |
+| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Data/resource pack generators                           | https://misode.github.io                                                                             |
+| Decompiled Minecraft source code                        | https://mcsrc.dev                                                                                    |
+| Modpack Dependency Visualizer                           | https://arcbra.github.io/ModPack-Dependency-Visualizer/                                              |
+| MDA: A Formal Approach to Game Design and Game Research | https://users.cs.northwestern.edu/~hunicke/MDA.pdf                                                   |
+| Minecraft Motion Tools                                  | https://github.com/OrHy3/MinecraftMotionTools                                                        |
+| Shader creation tutorial through Optifine/Iris          | https://www.youtube.com/playlist?list=PLn6IKc7V_f-EeKXbz5BI44esnKqtMoXfG                             |
+| Open-licensed assets                                    | https://github.com/malcolmriley/unused-textures<br>                                                  |
+| Approved Non-CurseForge Mods                            | https://docs.google.com/spreadsheets/d/176Wv-PZUo9hFxy6oC6N8tWdquBLPRtSuLbNK-r0_byM/edit?gid=0#gid=0 |
+| Custom Worldgen tutorials                               | https://www.youtube.com/@colebot                                                                     |
+| Modding Tutorials                                       | https://www.youtube.com/@ModdingByKaupenjoe<br>https://www.youtube.com/@thementorcodelab             |
+| KubeJS Tutorials                                        | https://www.youtube.com/@kctops6                                                                     |
