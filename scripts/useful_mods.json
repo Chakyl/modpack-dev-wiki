@@ -1751,6 +1751,23 @@
                 "fabric",
                 "neoforge"
             ]
+        },
+        {
+            "display_name": "Worldgen Devtools",
+            "link": {
+                "modrinth": "https://modrinth.com/mod/worldgen-devtools"
+            },
+            "description": "A mod that aids in the development of world generation data packs and mods",
+            "categories": [
+                "utility"
+            ],
+            "versions": [
+                "1.21.1",
+                "26.1"
+            ],
+            "loaders": [
+                "fabric"
+            ]
         }
     ]
 }
