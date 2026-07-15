@@ -1768,6 +1768,27 @@
             "loaders": [
                 "fabric"
             ]
+        },
+        {
+            "display_name": "Bad Wither No Cookie",
+            "link": {
+                "curseforge": "https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded",
+                "modrinth": "https://modrinth.com/mod/bad-wither-no-cookie"
+            },
+            "description": "Localizes global sound effects, particularly Wither and Dragon death sounds",
+            "categories": [
+                "bug_fixes"
+            ],
+            "versions": [
+                "1.19.2",
+                "1.20.1",
+                "1.21.1"
+            ],
+            "loaders": [
+                "fabric",
+                "forge",
+                "neoforge"
+            ]
         }
     ]
 }

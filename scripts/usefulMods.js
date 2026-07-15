@@ -1,7 +1,12 @@
 // Entry generator for the Useful Mods List
 // Pulls from modpack-dev-wiki/scripts/useful_mods.json
 // Not ran on site build, ran manually through VSCode terminal or NodeJS
+
 // npm run generate:usefulmods
+// Script args:
+// "--dryrun" to double check everything worked without modifying any files
+// "--updateversions" to flag if the script should ping APIs and update version info in the mods json
+// "--curseforgekey <KEY>" to provide your CF API key as they require you have a key to ping their API
 
 import fs from "fs";
 import path from "path";

@@ -24,6 +24,7 @@ These mods fix bugs present in Vanilla Minecraft, other mods, or in loaders.
 | Name | Links | Description | Alternatives |
 |------|-------|-------------| --------------|
 | AttributeFix | [CF](https://www.curseforge.com/minecraft/mc-mods/attributefix) / [MR](https://modrinth.com/mod/attributefix) | Removes arbitrary limits on Minecraft's attribute system. Uable to modify the base attributes of players/mobs, only change the caps. For that functionality, check out our guide [here.](https://modpack-dev-knowledgebase.github.io/modpack-dev-wiki/guide/custom-content/attribute-modification/) | - |
+| Bad Wither No Cookie | [CF](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded) / [MR](https://modrinth.com/mod/bad-wither-no-cookie) | Localizes global sound effects, particularly Wither and Dragon death sounds | - |
 | FTB Quests Kill Task Tweaks | [CF](https://www.curseforge.com/minecraft/mc-mods/quests-kill-task-tweaks) | Improves kill contribution tracking for FTB Quests | - |
 | Load My Fucking Tags | [CF](https://www.curseforge.com/minecraft/mc-mods/lmft) / [MR](https://modrinth.com/mod/lmft) | Prevents Incorrect Tag Entries from breaking an entire Tag | - |
 | Max Health Fix | [CF](https://www.curseforge.com/minecraft/mc-mods/max-health-fix) / [MR](https://modrinth.com/mod/max-health-fix) | Fixes an old bug in Minecraft that causes the "Max Health" attribute to be ignored when a player joins the game. | - |
