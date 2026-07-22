@@ -278,26 +278,6 @@
             ]
         },
         {
-            "display_name": "Radium*",
-            "link": {
-                "curseforge": "https://www.curseforge.com/minecraft/mc-mods/radium-reforged",
-                "modrinth": "https://modrinth.com/mod/radium"
-            },
-            "description": "Radium is an Unofficial Fork of CaffeineMC's 'Lithium'",
-            "alternatives": "[Lithium](https://www.curseforge.com/minecraft/mc-mods/lithium) on relevant versions",
-            "categories": [
-                "performance"
-            ],
-            "versions": [
-                "1.20.1",
-                "1.21.1"
-            ],
-            "loaders": [
-                "forge",
-                "neoforge"
-            ]
-        },
-        {
             "display_name": "Quick Pack",
             "link": {
                 "curseforge": "https://www.curseforge.com/minecraft/mc-mods/quick-pack",
