@@ -10,4 +10,4 @@ This is the repo for the Modpack Dev Wiki. The Modpack Dev Wiki is a comprehensi
 Pull requests are welcome! We would love to have you join our team of editors and developers. To contribute, see our [Contributing Guide](/CONTRIBUTING.md)
 
 ## License
-This project is licensed under the GNU General Public License v3.0. See [LICENSE](/LICENSE) for more information.
+This project is licensed under the MIT License. See [LICENSE](/LICENSE) for more information.
