@@ -23,6 +23,7 @@ These are mods that are essential for creating, removing, and editing aspects of
 
 | Name | Links | Description | Alternatives |
 |------|-------|-------------| --------------|
+| Additional Attributes | [CF](https://www.curseforge.com/minecraft/mc-mods/additional-attributes) / [MR](https://modrinth.com/mod/additional-attributes) | Provides attributes for modpack developers to use, and has additional compatibility with Iron's Spells and Apotheosis | - |
 | Additional Entity Attributes | [MR](https://modrinth.com/mod/additionalentityattributes) | Adds various attributes relating to entities, notably Size and Scale attributes | - |
 | Almost Unified | [CF](https://www.curseforge.com/minecraft/mc-mods/almostunified) / [MR](https://modrinth.com/mod/almost-unified) | Unify all resources | - |
 | Bad Mobs | [CF](https://www.curseforge.com/minecraft/mc-mods/bad-mobs) / [MR](https://modrinth.com/mod/bad-mobs) | Simple blacklist for mob spawns | - |

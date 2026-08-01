@@ -284,7 +284,7 @@
                 "modrinth": "https://modrinth.com/mod/radium"
             },
             "description": "Radium is an Unofficial Fork of CaffeineMC's 'Lithium'",
-            "alternatives": "[Lithium](https://www.curseforge.com/minecraft/mc-mods/lithium) on relevant versions",
+            "alternatives": "Recommended to use [Lithium](https://www.curseforge.com/minecraft/mc-mods/lithium) when it is available on the loader/version",
             "categories": [
                 "performance"
             ],
@@ -1183,7 +1183,8 @@
             "versions": [
                 "1.19.2",
                 "1.20.1",
-                "1.21.1"
+                "1.21.1",
+                "26.1"
             ],
             "loaders": [
                 "fabric",
@@ -1264,7 +1265,7 @@
                 "modrinth": "https://modrinth.com/mod/lithium"
             },
             "description": "General-purpose serverside optimization mod",
-            "alternatives": "[Radium](https://www.curseforge.com/minecraft/mc-mods/radium-reforged) on relevant versions",
+            "alternatives": "[Radium](https://www.curseforge.com/minecraft/mc-mods/radium-reforged) on versions not covered by Lithium",
             "categories": [
                 "performance"
             ],
@@ -1685,6 +1686,7 @@
                 "utility"
             ],
             "versions": [
+                "1.19.2",
                 "1.20.1",
                 "1.21.1"
             ],
